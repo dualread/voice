@@ -1,0 +1,17 @@
+数字 Numbers
+
+零 zero
+一 one
+二 two
+三 three
+四 four
+五 five
+六 six
+七 seven
+八 eight
+九 nine
+十 ten
+十一 eleven
+十二 twelve
+二十 twenty
+一百 one hundred

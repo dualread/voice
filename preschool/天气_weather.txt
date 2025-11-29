@@ -1,0 +1,13 @@
+天气 Weather
+
+晴天 sunny
+多云 cloudy
+下雨 rainy
+下雪 snowy
+刮风 windy
+雷电 thunder
+彩虹 rainbow
+热 hot
+冷 cold
+温暖 warm
+凉爽 cool

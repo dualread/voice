@@ -1,0 +1,16 @@
+问候语 Greetings
+
+你好 hello
+早上好 good morning
+下午好 good afternoon
+晚上好 good evening
+晚安 good night
+再见 goodbye or bye
+谢谢 thank you
+不客气 you're welcome
+对不起 sorry
+没关系 it's okay
+请 please
+是 yes
+不是 no
+好的 okay

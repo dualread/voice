@@ -1,0 +1,16 @@
+颜色 Colors
+
+红色 red
+蓝色 blue
+黄色 yellow
+绿色 green
+橙色 orange
+紫色 purple
+粉色 pink
+黑色 black
+白色 white
+灰色 gray
+棕色 brown
+金色 gold
+银色 silver
+彩虹 rainbow

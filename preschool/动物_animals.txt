@@ -1,0 +1,27 @@
+动物 Animals
+
+狗 dog
+猫 cat
+鸟 bird
+鱼 fish
+兔子 rabbit
+老虎 tiger
+狮子 lion
+大象 elephant
+猴子 monkey
+熊 bear
+熊猫 panda
+长颈鹿 giraffe
+斑马 zebra
+蛇 snake
+青蛙 frog
+鸭子 duck
+鸡 chicken
+猪 pig
+牛 cow
+羊 sheep
+马 horse
+老鼠 mouse
+蝴蝶 butterfly
+蜜蜂 bee
+蚂蚁 ant

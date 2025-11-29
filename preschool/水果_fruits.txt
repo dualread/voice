@@ -1,0 +1,17 @@
+水果 Fruits
+
+苹果 apple
+香蕉 banana
+橙子 orange
+葡萄 grape
+草莓 strawberry
+西瓜 watermelon
+桃子 peach
+梨 pear
+芒果 mango
+樱桃 cherry
+蓝莓 blueberry
+菠萝 pineapple
+柠檬 lemon
+猕猴桃 kiwi
+木瓜 papaya

@@ -1,0 +1,20 @@
+食物 Food
+
+米饭 rice
+面条 noodles
+面包 bread
+鸡蛋 egg
+牛奶 milk
+果汁 juice
+水 water
+饼干 cookie
+蛋糕 cake
+糖果 candy
+冰淇淋 ice cream
+汉堡包 hamburger
+三明治 sandwich
+比萨 pizza
+汤 soup
+肉 meat
+鸡肉 chicken
+鱼肉 fish

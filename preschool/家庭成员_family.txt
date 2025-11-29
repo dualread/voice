@@ -1,0 +1,16 @@
+家庭成员 Family
+
+爸爸 father or dad
+妈妈 mother or mom
+哥哥 older brother
+弟弟 younger brother
+姐姐 older sister
+妹妹 younger sister
+爷爷 grandfather
+奶奶 grandmother
+外公 grandfather
+外婆 grandmother
+叔叔 uncle
+阿姨 aunt
+宝宝 baby
+家人 family

@@ -1,0 +1,22 @@
+身体部位 Body Parts
+
+头 head
+头发 hair
+眼睛 eye
+耳朵 ear
+鼻子 nose
+嘴巴 mouth
+牙齿 tooth
+舌头 tongue
+脸 face
+脖子 neck
+肩膀 shoulder
+手臂 arm
+手 hand
+手指 finger
+腿 leg
+脚 foot
+脚趾 toe
+肚子 belly
+背 back
+膝盖 knee

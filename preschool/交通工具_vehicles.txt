@@ -1,0 +1,17 @@
+交通工具 Vehicles
+
+汽车 car
+公共汽车 bus
+自行车 bicycle or bike
+摩托车 motorcycle
+火车 train
+飞机 airplane
+船 boat or ship
+地铁 subway
+出租车 taxi
+卡车 truck
+救护车 ambulance
+消防车 fire truck
+警车 police car
+直升机 helicopter
+火箭 rocket

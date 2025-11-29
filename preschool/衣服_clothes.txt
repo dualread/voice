@@ -1,0 +1,17 @@
+衣服 Clothes
+
+衬衫 shirt
+T恤 T-shirt
+裤子 pants
+短裤 shorts
+裙子 skirt or dress
+连衣裙 dress
+外套 coat or jacket
+毛衣 sweater
+袜子 socks
+鞋子 shoes
+帽子 hat or cap
+手套 gloves
+围巾 scarf
+睡衣 pajamas
+内裤 underwear

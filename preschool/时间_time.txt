@@ -1,0 +1,21 @@
+时间 Time
+
+早上 morning
+中午 noon
+下午 afternoon
+晚上 evening
+夜晚 night
+今天 today
+明天 tomorrow
+昨天 yesterday
+星期一 Monday
+星期二 Tuesday
+星期三 Wednesday
+星期四 Thursday
+星期五 Friday
+星期六 Saturday
+星期日 Sunday
+春天 spring
+夏天 summer
+秋天 autumn or fall
+冬天 winter

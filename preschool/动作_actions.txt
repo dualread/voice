@@ -1,0 +1,28 @@
+动作 Actions
+
+走 walk
+跑 run
+跳 jump
+坐 sit
+站 stand
+睡觉 sleep
+吃 eat
+喝 drink
+看 see or look
+听 listen or hear
+说 speak or say
+唱 sing
+跳舞 dance
+画画 draw
+写 write
+读 read
+玩 play
+笑 laugh
+哭 cry
+洗 wash
+穿 wear
+脱 take off
+开 open
+关 close
+拿 take
+放 put

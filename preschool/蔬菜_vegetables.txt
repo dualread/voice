@@ -1,0 +1,17 @@
+蔬菜 Vegetables
+
+胡萝卜 carrot
+西红柿 tomato
+土豆 potato
+黄瓜 cucumber
+白菜 cabbage
+菠菜 spinach
+玉米 corn
+南瓜 pumpkin
+洋葱 onion
+大蒜 garlic
+豌豆 pea
+蘑菇 mushroom
+西兰花 broccoli
+茄子 eggplant
+青椒 green pepper

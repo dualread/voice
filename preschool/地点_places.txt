@@ -1,0 +1,19 @@
+地点 Places
+
+家 home
+学校 school
+公园 park
+动物园 zoo
+医院 hospital
+超市 supermarket
+图书馆 library
+商店 store or shop
+餐厅 restaurant
+游乐场 playground
+海滩 beach
+山 mountain
+河 river
+湖 lake
+海 sea
+农场 farm
+电影院 cinema

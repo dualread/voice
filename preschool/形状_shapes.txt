@@ -1,0 +1,12 @@
+形状 Shapes
+
+圆形 circle
+正方形 square
+三角形 triangle
+长方形 rectangle
+椭圆形 oval
+心形 heart
+星形 star
+菱形 diamond
+五边形 pentagon
+六边形 hexagon
