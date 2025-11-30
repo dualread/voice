@@ -1,0 +1,16 @@
+形状外观
+角度 angle
+弯曲 bend
+束缚 bound
+圆圈 circle
+曲线 curve
+磁盘 disk
+点 dot
+掉落 drop
+折叠 fold
+加入 join
+保证金 margin
+部门 sector
+正方形 square
+邮票 stamp
+转 turn

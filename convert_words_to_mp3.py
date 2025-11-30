@@ -25,11 +25,27 @@ PAUSE_BETWEEN_WORDS = 800
 # 中英文之间的停顿时间（毫秒）
 PAUSE_BETWEEN_LANGUAGES = 500
 
+# 重试次数
+MAX_RETRIES = 3
+
 
 async def text_to_speech(text: str, voice: str, output_file: str):
-    """将文本转换为语音并保存为文件"""
-    communicate = edge_tts.Communicate(text, voice, rate=RATE)
-    await communicate.save(output_file)
+    """将文本转换为语音并保存为文件，带重试机制"""
+    for attempt in range(MAX_RETRIES):
+        try:
+            communicate = edge_tts.Communicate(text, voice, rate=RATE)
+            await communicate.save(output_file)
+            return True
+        except Exception as e:
+            if attempt < MAX_RETRIES - 1:
+                print(f"    重试 ({attempt + 1}/{MAX_RETRIES}): {text}")
+                await asyncio.sleep(1)  # 等待1秒后重试
+            else:
+                print(f"    警告: 无法生成音频 '{text}': {e}")
+                # 生成一个静音文件作为替代
+                await generate_silence(output_file, 100)
+                return False
+    return False
 
 
 async def generate_word_audio(chinese: str, english: str, output_file: str, temp_dir: str):
@@ -47,7 +63,9 @@ async def generate_word_audio(chinese: str, english: str, output_file: str, temp
 
 
 def parse_word_file(file_path: str) -> list:
-    """解析单词文件，返回 [(中文, 英文), ...] 列表"""
+    """解析单词文件，返回 [(中文, 英文), ...] 列表
+    如果一行只有中文（如文件标题），则英文部分为None
+    """
     words = []
     with open(file_path, 'r', encoding='utf-8') as f:
         for line_num, line in enumerate(f, 1):
@@ -60,8 +78,9 @@ def parse_word_file(file_path: str) -> list:
             if len(parts) >= 2:
                 chinese, english = parts[0], parts[1]
                 words.append((chinese, english))
-            else:
-                print(f"警告: 第 {line_num} 行格式不正确，已跳过: {line}")
+            elif len(parts) == 1:
+                # 只有中文（如文件标题），英文为None
+                words.append((parts[0], None))
     
     return words
 
@@ -98,22 +117,31 @@ async def convert_file_to_mp3(input_file: str, output_file: str = None):
         
         # 处理每个单词
         for i, (chinese, english) in enumerate(words):
-            print(f"处理中 ({i+1}/{len(words)}): {chinese} - {english}")
+            if english is None:
+                # 只有中文（如文件标题）
+                print(f"处理中 ({i+1}/{len(words)}): {chinese}")
+                chinese_file = os.path.join(temp_dir, f"word_{i}_zh.mp3")
+                await text_to_speech(chinese, CHINESE_VOICE, chinese_file)
+                audio_files.append(chinese_file)
+            else:
+                # 中英双语
+                print(f"处理中 ({i+1}/{len(words)}): {chinese} - {english}")
+                chinese_file = os.path.join(temp_dir, f"word_{i}_zh.mp3")
+                english_file = os.path.join(temp_dir, f"word_{i}_en.mp3")
+                
+                # 生成中英文音频
+                await asyncio.gather(
+                    text_to_speech(chinese, CHINESE_VOICE, chinese_file),
+                    text_to_speech(english, ENGLISH_VOICE, english_file)
+                )
+                
+                # 添加到文件列表: 中文 + 短停顿 + 英文
+                audio_files.append(chinese_file)
+                audio_files.append(short_silence_file)
+                audio_files.append(english_file)
             
-            chinese_file = os.path.join(temp_dir, f"word_{i}_zh.mp3")
-            english_file = os.path.join(temp_dir, f"word_{i}_en.mp3")
-            
-            # 生成中英文音频
-            await asyncio.gather(
-                text_to_speech(chinese, CHINESE_VOICE, chinese_file),
-                text_to_speech(english, ENGLISH_VOICE, english_file)
-            )
-            
-            # 添加到文件列表: 中文 + 短停顿 + 英文 + 长停顿
-            audio_files.append(chinese_file)
-            audio_files.append(short_silence_file)
-            audio_files.append(english_file)
-            if i < len(words) - 1:  # 最后一个单词不加长停顿
+            # 单词之间加长停顿（最后一个除外）
+            if i < len(words) - 1:
                 audio_files.append(silence_file)
         
         # 合并所有音频文件

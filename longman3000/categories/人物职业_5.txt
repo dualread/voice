@@ -1,0 +1,15 @@
+人物职业5
+受害者 victim
+访客 visitor
+自愿的 voluntary
+病房 ward
+奇怪的 weird
+白色 white
+妻子 wife
+获胜者 winner
+证人 witness
+女人 woman
+工人 worker
+作家 writer
+年轻人 youngster
+青年 youth
