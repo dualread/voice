@@ -1,0 +1,32 @@
+洗	wash
+刷	brush
+洗澡	bath
+梳头	comb
+眼睛	Eyes
+耳朵	Ears
+脖子	Neck
+鼻子	Nose
+梨	Pear
+桃子	Peach
+葡萄	Grapes
+苹果	Apple
+橙子	Orange
+香蕉	Banana
+胡罗卜	Carrot
+牛奶	Milk
+面包	Bread
+秋千	Swing
+绵羊	Sheep
+兔子	Rabbit
+母鸡	Hen
+奶牛	Cow
+鸭子	Duck
+司机	Driver
+护士	Nurse
+医生	Doctor
+歌手	Singer
+书包	Backpack
+睡觉	Sleeping
+肥皂	Soap
+刷牙	Brushing Teeth
+洗澡	Taking a Bath
